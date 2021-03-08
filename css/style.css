@@ -603,6 +603,7 @@ img {
 /* Join us*/
 .join {
   display: block;
+  margin-right: 93px;
 }
 
 .title-join {
@@ -647,8 +648,72 @@ img {
   background-color: var(--back-blue);
 }
 
+/* Subscribe form */
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
 
-/* Modal window*/
+.subscribe-input:focus,
+.subscribe-input:hover {
+  border: 1px solid var(--back-blue);
+}
+
+.subscribe-label {
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.subscribe-input {
+  display: block;
+  margin-top: 20px;
+  width: 358px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--grey-text-op60);
+  background-color: var(--back-light-black);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  background-color: var(--back-blue);
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:hover {
+  background-color: var(--white-text);
+  color: var(--back-blue);
+}
+
+.telegram-icon {
+  margin-left: 10px;
+}
+
+/* Modal window */
 .backdrop {
   position: fixed;
   z-index: 3;
