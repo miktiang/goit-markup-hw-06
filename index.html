@@ -387,11 +387,7 @@
         <form class="subscribe-form">
             <label class="subscribe-label">
               Подпишитесь на рассылку
-              <input
-                class="subscribe-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"/>
+              <input class="subscribe-input" type="email" name="email" placeholder="E-mail"/>
             </label>
             <button type="submit" class="subscribe-btn">
               Подписаться
@@ -410,6 +406,42 @@
               <use href="./images/icons.svg#cross"></use>
             </svg>
           </button>
+          <form class="call-back" name="call-back">
+            <p class="call-back-title">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="call-back-label" for="user-name"> Имя </label>
+            <div class="cb-input-container">
+              <input class="call-back-input" name="name" type="text" id="user-name" />
+              <svg class="call-back-icon" width="18" height="18">
+                <use href="./images/icons.svg#cb-person"></use>
+              </svg>
+            </div>
+            <label class="call-back-label" for="tel"> Телефон </label>
+            <div class="cb-input-container">
+              <input class="call-back-input" name="tel" type="tel" id="tel" />
+              <svg class="call-back-icon" width="18" height="18">
+                <use href="./images/icons.svg#cb-phone"></use>
+              </svg>
+            </div>
+            <label class="call-back-label" for="user-email"> Почта </label>
+            <div class="cb-input-container">
+              <input class="call-back-input" name="email" type="email" id="user-email" />
+              <svg class="call-back-icon" width="18" height="18">
+                <use href="./images/icons.svg#cb-email"></use>
+              </svg>
+            </div>
+            <label class="call-back-label">
+              Комментарий
+              <textarea class="call-back-textarea" name="comment" placeholder="Введите текст">
+            </textarea>
+            </label>
+            <label class="call-back-terms">
+              <input class="checkbox" type="checkbox" name="checkbox" />
+              <span class="checkbox-border"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="terms"> Условия договора</a>
+            </label>
+            <button class="call-back-submit" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <!-- Script -->
